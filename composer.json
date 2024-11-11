@@ -1,0 +1,36 @@
+{
+    "name": "gosiming/dcat-distpicker",
+    "description": "Distpicker extension for dcat-admin",
+    "alias": "省市区三级联动组件",
+    "type": "library",
+    "keywords": [
+        "dcat-admin",
+        "extension",
+        "distpicker"
+    ],
+    "homepage": "https://github.com/gosiming/dcat-distpicker",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gosiming",
+            "email": "simon@gosiming.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GoSiming\\DcatDistpicker\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "GoSiming\\DcatDistpicker\\DcatDistpickerServiceProvider",
+        "laravel": {
+            "providers": [
+                "GoSiming\\DcatDistpicker\\DcatDistpickerServiceProvider"
+            ]
+        }
+    }
+}
